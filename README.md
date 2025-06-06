@@ -35,7 +35,7 @@ Follow these steps to set up and run the project locally:
 ### 1\. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Weather-Forecast-Prediction.git
+git clone https://github.com/Syed373/Weather-Forecast-Prediction.git
 cd Weather-Forecast-Prediction
 ```
 
@@ -48,18 +48,12 @@ source venv/bin/activate  # On Windows: `venv\Scripts\activate`
 
 ### 3\. Install Dependencies
 
-```bash
-pip install -r requirements.txt
-```
-
-*(Create a `requirements.txt` file if you don't have one, by running `pip freeze > requirements.txt` after installing all necessary libraries)*
-
 ### 4\. Obtain OpenWeatherMap API Key
 
 1.  Go to the [OpenWeatherMap website](https://openweathermap.org/api).
 2.  Sign up for a free account.
 3.  Generate an API key.
-4.  Replace `'YOUR_API_KEY'` in `views.py` with your actual API key:
+4.  Replace `'API_KEY'` in `views.py` with your actual API key:
     ```python
     API_KEY = 'YOUR_API_KEY' # Replace with your OpenWeatherMap API key
     ```
@@ -71,7 +65,7 @@ This application relies on a `weather.csv` file for training the machine learnin
   * Place your `weather.csv` file in a location accessible by your Django project.
   * Update the `csv_path` variable in `views.py` to point to the correct path of your `weather.csv` file:
     ```python
-    csv_path = os.path.join('C:\\Users\\ASUS\\OneDrive\\Desktop\\Weather_pred\\weather.csv') # Update this path
+    csv_path = os.path.join('Your "weather.csv" file path') # Update this path
     ```
     **Note:** It's highly recommended to make this path dynamic or relative for better portability across different environments. For example, you could place `weather.csv` inside your Django app's directory (e.g., `static/data/weather.csv`) and adjust the path accordingly.
 
